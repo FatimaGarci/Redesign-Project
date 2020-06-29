@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.All {
+    background-color: #f2f2f2;
+}
+
+.Showcase {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.VideoContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("../img/e.png") no-repeat center center/cover;
+}
+
+.VideoContainer video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.VideoContainer:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.Content {
+    z-index: 10;
+}
+   
+   .Logo h1 {
+       font-size: 4rem;
+       font-weight: lighter;
+       padding-top: 8%;
+   }
+   
+   .Logo p {
+       font-size: 1.3rem;
+   }
+   
+   .LogoImg {
+       height: 200px;
+       width: auto;
+   }
+
+   .MenuLeft2 {
+    display: flex;
+    flex-direction: column;
+    width: 13%;
+    z-index: 10;
+}
+
+.Logo2 {
+ padding-top: 10%;
+ text-align: center;
+ padding-left: 7%;
+}
+
+.Logo2 h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: lighter;
+}
+
+.Logo2 p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.LogoImg2 {
+    height: 95px;
+    width: auto;
+}
+
+.Links2 {
+    list-style: none;
+    margin: 0;
+    padding-left: 20%;
+    padding-top: 20%;
+}
+
+.Links2 a {
+    text-decoration: none;
+    color: navy;
+    line-height: 1.5;
+}
+
+.Links2 a:hover {
+    color: #4040e9;
+}
