@@ -1,5 +1,5 @@
-#H1 Redesign-Project
-#H2 redesign of the well-known Wikipedia site
+# Redesign-Project
+## Redesign of the well-known Wikipedia site
 
   <home img>
   ![home page](/Users/r2h/Desktop/Redesign-Project/public/assets/img/HomeGif.jpg "Home Page Image")
@@ -12,11 +12,11 @@ For the main page, we decided to keep the Wikipedia tradition of simplicity, but
     
 <old main page img / new main page img>
 
-#H3 Backend
+### Backend
 
   The app is run using the node library. It uses the middleware linked to the Log In page to connect to the database of member profiles.
 
-#H3 Installation
+### Installation
   In order to install the app:
   1. run the terminal command `npm install`. This installs the node modules needed to run the app. 
   2. `npm start` in your terminal will make the app appear on your machine's local host. 
@@ -26,11 +26,11 @@ For the main page, we decided to keep the Wikipedia tradition of simplicity, but
   
   <terminal image>
   
-  #H3 Authors 
+  ### Authors 
   Fatima Garcia, Mayara Caldeira Smith, Vanessa Baker, Kelly Ornellas, Lenise Spann-Bell
   
-  #H3 Support
-  #H4 Contact the team members via Slack
+  ### Support
+  #### Contact the team members via Slack
   1. [Fatima Garcia](https://roadtohire.slack.com/team/UFQG4GRPS)
   2. [Mayara Caldeira Smith](https://roadtohire.slack.com/team/UTG5L40QJ)
   3. [Vanessa Baker](https://roadtohire.slack.com/team/UTUVDFREZ)
