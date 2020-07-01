@@ -27,7 +27,7 @@ const Main = () => (
         <li><a href="/">About Wikipedia</a></li>
         <li><Link to="/contact">Contact Us</Link></li>
         <li><a href="/">Donate</a></li>
-        <li><a href="/">Log In</a></li>
+        <li><Link to="/login">Sign In</Link></li>
         
 </ul>
 </div>
