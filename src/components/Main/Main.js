@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 
 
 const Main = () => (
+    <div>
     <div className={classes.All}>
 
 <div className={classes.MenuLeft}>
@@ -44,7 +45,9 @@ const Main = () => (
 </div>
 <Cards className={classes.Cards} />
 </div>
-<Footer />
+
+    </div>
+    <Footer />
     </div>
 );
 

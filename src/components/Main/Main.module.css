@@ -2,6 +2,7 @@
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 .MenuLeft {
@@ -34,9 +35,10 @@
 
 .Links {
     list-style: none;
-    margin: 0;
+
     padding-left: 20%;
     padding-top: 20%;
+    text-align: center;
 }
 
 .Links a {
@@ -47,21 +49,17 @@
 
 .Links a:hover {
     color: #4040e9;
+
 }
 
 .Main {
-    display: inline-flex;
-    flex-direction: column;
-    width: 85%;
+    margin-left: 3%;
     background-color: white;
     padding-left: 2%;
     padding-right: 2%;
 }
 
-.Welcome {
-    padding-top: 2%;
-    padding-left: 0;
-}
+
 
 .Welcome p {
     font-size: 2rem;
@@ -80,4 +78,10 @@
 
 .Cards {
     margin-left: 10%;
+}
+
+
+@media screen and (max-width: 780px) {
+    .Welcome { margin-left:10%; }
+    .Main {  margin-left:25%;}  
 }
