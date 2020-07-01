@@ -21,10 +21,10 @@ const Main = () => (
 <div>
 <ul className={classes.Links}>
         <li><Link to="/main">Main Page</Link></li>
-        <li><a href="/">Contents</a></li>
+        {/* <li><a href="/">Contents</a></li>
         <li><a href="/">Current Events</a></li>
         <li><a href="/">Random Article</a></li>
-        <li><a href="/">About Wikipedia</a></li>
+        <li><a href="/">About Wikipedia</a></li> */}
         <li><Link to="/contact">Contact Us</Link></li>
         <li><a href="/">Donate</a></li>
         <li><Link to="/login">Sign In</Link></li>
