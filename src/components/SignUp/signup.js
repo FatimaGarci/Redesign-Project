@@ -1,39 +1,108 @@
-import React from "react";
+import React, { Component } from "react";
 import Footer from '../Footer/Footer';
-
-import classes from './signup.modules.css';
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn, MDBCard, MDBCardBody } from 'mdbreact';
+import  './signup.css';
+import { register } from './userFunction'
 
 
-const FormP = () => {
-return (
-    <div>
-<MDBContainer className={classes.container}>
-  <MDBRow>
-    <MDBCol md="6">
-      <form>
-        <p className="h5 text-center mb-4">Sign up</p>
-        <div className="grey-text">
-          <MDBInput label="Your name" icon="user" group type="text" validate error="wrong"
-            success="right" />
-          <MDBInput label="Your email" icon="envelope" group type="email" validate error="wrong"
-            success="right" />
-          <MDBInput label="Confirm your email" icon="exclamation-triangle" group type="text" validate
-            error="wrong" success="right" />
-          <MDBInput label="Your password" icon="lock" group type="password" validate />
+class signUp extends Component {
+  constructor() {
+    super()
+    this.state = {
+      first_name: '',
+      last_name: '',
+      email: '',
+      password: '',
+      errors: {}
+    }
+
+    this.onChange = this.onChange.bind(this)
+    this.onSubmit = this.onSubmit.bind(this)
+  }
+
+  onChange(e) {
+    this.setState({ [e.target.name]: e.target.value })
+  }
+  onSubmit(e) {
+    e.preventDefault()
+
+    const newUser = {
+      first_name: this.state.first_name,
+      last_name: this.state.last_name,
+      email: this.state.email,
+      password: this.state.password
+    }
+
+    register(newUser).then(res => {
+      this.props.history.push(`/login`)
+    })
+  }
+
+  render() {
+    return (
+      <div>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6 mt-5 mx-auto">
+            <form noValidate onSubmit={this.onSubmit}>
+              <h1 className="h3 mb-3 font-weight-normal">Register</h1>
+              <div className="form-group">
+                <label htmlFor="name">First name</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  name="first_name"
+                  placeholder="Enter your first name"
+                  value={this.state.first_name}
+                  onChange={this.onChange}
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="name">Last name</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  name="last_name"
+                  placeholder="Enter your lastname name"
+                  value={this.state.last_name}
+                  onChange={this.onChange}
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="email">Email address</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  name="email"
+                  placeholder="Enter email"
+                  value={this.state.email}
+                  onChange={this.onChange}
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="password">Password</label>
+                <input
+                  type="password"
+                  className="form-control"
+                  name="password"
+                  placeholder="Password"
+                  value={this.state.password}
+                  onChange={this.onChange}
+                />
+              </div>
+              <button
+                type="submit"
+                className="btn btn-lg btn-primary btn-block"
+              >
+                Register!
+              </button>
+            </form>
+          </div>
         </div>
-        <div className="text-center">
-          <MDBBtn color="primary">Register</MDBBtn>
-        </div>
-      </form>
-    </MDBCol>
-  </MDBRow>
-</MDBContainer>
-<Footer/>
-</div>
-);
-};
+      </div>
+       < Footer />
+      </div>
+    )
+  }
+}
 
-export default FormP;
+export default signUp;
