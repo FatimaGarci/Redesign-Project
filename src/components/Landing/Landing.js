@@ -120,10 +120,10 @@ class Speech extends Component {
             </div>
           </div>
         </section>
-        <div>
+        {/* <div>
         <div id='interim' ></div>
         <div id='final' ></div>
-      </div>
+      </div> */}
 
         <section className={classes.Footer}><Footer />
         </section>

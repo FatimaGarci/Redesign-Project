@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     React.useEffect(() => { window.scrollTo(0, 0); }, [])
   return(
-    <div>
+    <div style={{backgroundColor: "#f2f2f2"}}>
       <section className={classes.Links}>
         <div className={classes.LinksInner}>
         <ul>
