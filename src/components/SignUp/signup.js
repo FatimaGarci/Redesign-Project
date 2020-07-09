@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Footer from '../Footer/Footer';
 import  './signup.css';
 import { register } from './userFunction'
+import { Link } from 'react-router-dom';
 
 
 class signUp extends Component {
@@ -89,12 +90,16 @@ class signUp extends Component {
                   onChange={this.onChange}
                 />
               </div>
+      
               <button
                 type="submit"
                 className="btn btn-lg btn-primary btn-block"
               >
                 Register!
               </button>
+              <span> Already have an acct? <Link  className="signin" to="/login">  Sign in Here!
+    
+        </Link></span>
             </form>
           </div>
         </div>

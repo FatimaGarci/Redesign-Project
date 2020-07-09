@@ -9,6 +9,7 @@ import Footer from '../Footer/Footer';
 import { Link } from 'react-router-dom';
 
 
+
 const Main = () => (
     <div>
     <div className={classes.All}>
