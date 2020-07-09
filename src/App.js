@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Profile from './components/Profile/profile'
 import Main from './components/Main/Main';
 import signUp from './components/SignUp/signup'
 import Speech from './components/Landing/Landing';
@@ -19,6 +20,7 @@ function App() {
     <Route exact path="/contact" component ={Contact} />
     <Route exact path="/login" component ={logIn} />
     <Route exact path="/signup" component ={signUp} />
+    <Route exact path="/profile" component ={Profile} />
       </div>
     </Router>
   );

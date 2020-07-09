@@ -16,6 +16,7 @@
     "bootstrap": "^4.5.0",
     "cors": "^2.8.5",
     "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^2.2.0",
     "mdbreact": "^4.27.0",
     "mobx": "^5.15.4",
     "mobx-react": "^6.2.2",

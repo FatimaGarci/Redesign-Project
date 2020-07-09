@@ -90,13 +90,15 @@ class signUp extends Component {
                   onChange={this.onChange}
                 />
               </div>
-      
+      <Link to='./profile'>
               <button
                 type="submit"
                 className="btn btn-lg btn-primary btn-block"
               >
                 Register!
               </button>
+
+              </Link>
               <span> Already have an acct? <Link  className="signin" to="/login">  Sign in Here!
     
         </Link></span>

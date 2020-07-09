@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import jwt_decode from 'jwt-decode'
+import Footer from '../Footer/Footer'
+// import jwt_decode from 'jwt-decode'
 
 class Profile extends Component {
   constructor() {
@@ -14,16 +15,18 @@ class Profile extends Component {
 
   componentDidMount() {
     const token = localStorage.usertoken
-    const decoded = jwt_decode(token)
+    // const decoded = jwt_decode(token)
     this.setState({
-      first_name: decoded.first_name,
-      last_name: decoded.last_name,
-      email: decoded.email
+      first_name: this.first_name,
+      last_name: this.last_name,
+      email:this.email
     })
   }
 
   render() {
+
     return (
+        <div>
       <div className="container">
         <div className="jumbotron mt-5">
           <div className="col-sm-8 mx-auto">
@@ -46,9 +49,12 @@ class Profile extends Component {
             </tbody>
           </table>
         </div>
+
       </div>
-    )
-  }
+      <Footer />
+      </div>
+    );
+  };
 }
 
 export default Profile
