@@ -1,0 +1,55 @@
+.MenuLeft {
+    display: inline-flex;
+    flex-direction: column;
+    width: 13%;
+}
+
+.Logo {
+ padding-top: 10%;
+ text-align: center;
+ padding-left: 7%;
+}
+
+.Logo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: lighter;
+}
+
+.Logo p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.LogoImg {
+    height: 95px;
+    width: auto;
+}
+
+.Links {
+    list-style: none;
+
+    padding-left: 20%;
+    padding-top: 20%;
+    text-align: center;
+}
+
+.Links a {
+    text-decoration: none;
+    color: navy;
+    line-height: 1.5;
+}
+
+.Links a:hover {
+    color: #4040e9;
+
+}
+.Main {
+    margin-left: 3%;
+    background-color: #f2f2f2;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.Cards {
+    margin-left: 10%;
+}
