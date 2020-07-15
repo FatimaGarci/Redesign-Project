@@ -31,4 +31,4 @@ For the main page, we decided to keep the Wikipedia tradition of simplicity, but
   2. [Mayara Caldeira Smith](https://roadtohire.slack.com/team/UTG5L40QJ)
   3. [Vanessa Baker](https://roadtohire.slack.com/team/UTUVDFREZ)
   4. [Kelly Ornellas](https://roadtohire.slack.com/team/UTUVDFREZ)
-  5. [Lenise Spann-Bell](https://roadtohire.slack.com/team/UTUVDCYKX)
+  5. [Lenise Spann-Bell](https://roadtohire.slack.com/team/UTUVDCYKX)# redesign
